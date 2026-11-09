@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+<!-- O head reúne as configurações da página e as folhas de estilo. -->
 <head>
+   <!-- O UTF-8 permite exibir acentos. O viewport ajusta a largura à tela do dispositivo. -->
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Título exibido na aba do navegador. -->
    <title>Meu Portal de Entretenimento Digital</title>
+   <!-- O reset.css reduz diferenças nos estilos padrão dos navegadores. -->
    <!-- CSS Reset de Eric Meyer -->
    <link rel="stylesheet" href="reset.css">
+   <!-- O estilo.css vem depois do reset e aplica o visual do portal. -->
    <link rel="stylesheet" href="estilo.css">
 
+   <!-- O CSS deste bloco define o espaço abaixo dos títulos h2. -->
    <style>
       h2 {
          margin-bottom: 12px;
@@ -17,13 +23,19 @@
 </head>
 
 <body>
+   <!-- O h1 é o título principal do portal. O h3 abaixo identifica a atividade. -->
    <h1>Meu Portal de Entretenimento Digital</h1><br>
    <h3>ritaPezzo_Ag13_DS_I</h3>
+   <!-- O contêiner principal agrupa as três colunas do portal. -->
    <div class="principal">
+      <!-- Coluna esquerda com dicas de filmes e séries. -->
       <div class="esquerda" id="filmes-series">
+         <!-- O h2 dá nome à coluna. A classe titulo destaca o nome de cada recomendação. -->
          <h2>Filmes e Séries</h2>
          <p class="titulo">Dica de série:</p>
+         <!-- A tag img carrega uma imagem da pasta imagens. Aqui, width e height definem seu tamanho. -->
          <img src="imagens/twd.png" width="100px" height="80px">
+         <!-- O parágrafo com a classe descricao apresenta a recomendação. -->
          <p  class="descricao">
             Imagine um futuro onde o planeta foi dominado
             por uma doença em que todos os mortos voltam à
@@ -33,6 +45,7 @@
             você pode assistir a série na Netflix, que possui todas as temporadas disponíveis para maratonar. A série é
             baseada na história em quadrinhos de mesmo nome,
             criada por Robert Kirkman, Tony Moore e Charlie Adlard.
+            <!-- O href define o destino do link. O target="_blank" abre o destino em uma nova aba ou janela. -->
             <a href="https://www.netflix.com/br/title/70177057" target="_blank">Acesse a série na Netflix</a>
 
          </p>
@@ -49,9 +62,11 @@
             <a href="https://www.youtube.com/watch?v=ACKzdvWBCbA" target="_blank">Assista ao trailer do filme</a>
          </p>
       </div><br>
+      <!-- Coluna central com recomendações de músicas e podcasts. -->
       <div class="central" id="musica-podcasts">
          <h2>Músicas e Podcasts </h2>
          <p class="titulo">Pearl Jam:</p>
+         <!-- Os GIFs desta coluna são imagens animadas. O alt oferece um texto alternativo. -->
          <img src="imagens/pj.gif" alt="Imagem animada" class="meu-gif"><br>
          <p class="descricao">
             Pearl Jam é uma banda de rock alternativo formada em Seattle, Washington, em 1990. A banda é conhecida por
@@ -83,6 +98,7 @@
 
       </div>
 
+      <!-- Coluna direita com dicas de games e tecnologia. -->
       <div class="direita" id="games-tecnologia">
          <h2>Games e Tecnologia</h2>
          <p class="titulo">Dica de jogo: MIR4</p>
@@ -99,6 +115,7 @@
             a mineração de criptomoedas. É um jogo que combina elementos de RPG, ação e estratégia, oferecendo uma
             experiência envolvente para os jogadores.
 
+            <!-- Links de download do MIR4 para celular e PC. -->
             <a href="https://play.google.com/store/apps/details?id=com.wemade.mir4.global&hl=pt_BR&gl=US"
                target="_blank">Baixe o Mirinha aqui para celular</a>
             <a href="https://live-dl.mir4global.com/global-launcher/Mir4Launcher_Install.exe" target="_blank">Baixe o
