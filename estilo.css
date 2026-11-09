@@ -6,6 +6,7 @@ h1:hover {
     color: rgb(255, 0, 0);
 }
 
+/* O Flexbox organiza as três seções lado a lado. */
 .principal {
     display: flex;
     flex-direction: row;
@@ -13,25 +14,26 @@ h1:hover {
     min-height: 100vh;
 }
 
-.esquerda {
-    flex: 1;
-    background-color: rgb(127, 140, 106);
-    text-align: center;
-    padding: 15px;
-}
-
-.central {
-    flex: 1;
-    background-color: rgb(217, 210, 139);
-    text-align: center;
-    padding: 15px;
-}
-
+/* O mesmo valor de flex nas três colunas dá a elas o mesmo fator de crescimento. */
+.esquerda,
+.central,
 .direita {
     flex: 1;
-    background-color: rgb(106, 121, 93);
     text-align: center;
     padding: 15px;
+}
+
+/* Cada ID define a cor de fundo de uma seção. */
+#filmes-series {
+    background-color: rgb(127, 140, 106);
+}
+
+#musica-podcasts {
+    background-color: rgb(217, 210, 139);
+}
+
+#games-tecnologia {
+    background-color: rgb(106, 121, 93);
 }
 .meu-gif {
     width: 250px;
@@ -39,6 +41,7 @@ h1:hover {
     margin-top: 20px;
     border-radius: 10px;
 }
+/* As classes abaixo padronizam os textos e os títulos das recomendações. */
 .descricao {
     font-size: 20px;
     background-color: rgb(255, 192, 222);
@@ -49,6 +52,7 @@ h1:hover {
     
 }
 
+/* As imagens se ajustam à largura da coluna até 350 px e mantêm a proporção original. */
 .principal img {
     width: 100%;
     max-width: 350px;
