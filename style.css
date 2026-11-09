@@ -1,0 +1,59 @@
+
+h1 {
+    text-align: center;
+}
+h1:hover {
+    color: rgb(255, 0, 0);
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.esquerda {
+    flex: 1;
+    background-color: rgb(127, 140, 106);
+    text-align: center;
+    padding: 15px;
+}
+
+.central {
+    flex: 1;
+    background-color: rgb(217, 210, 139);
+    text-align: center;
+    padding: 15px;
+}
+
+.direita {
+    flex: 1;
+    background-color: rgb(106, 121, 93);
+    text-align: center;
+    padding: 15px;
+}
+.meu-gif {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.descricao {
+    font-size: 20px;
+    background-color: rgb(255, 192, 222);
+}
+.titulo {
+    font-size: 30px;
+    background-color: rgb(178, 108, 255)
+    
+}
+
+.principal img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
